@@ -1,0 +1,118 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0b1221;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+    display: flex;
+    /* allow absolute-centering of the nav links */
+    position: relative;
+    align-items: center;
+    padding: 0.6rem 6%;
+    background-color: #0f172a;
+    border-bottom: #e2e8f0;
+    
+}
+
+.logo {
+       font-size: 1.5rem;
+    font-weight: 700;
+    color: #60a5fa;
+    /* keep the logo on the left and prevent it from expanding when nav-links are absolutely positioned */
+    flex: 0 0 auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    /* center the links horizontally in the header regardless of logo width */
+    position: absolute;
+    left: 56%;
+    top: 44%;
+    transform: translate(-50%, -50%);
+}
+
+
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding-left: 0px;
+
+}
+
+.nav-links a:hover {
+    color: #60a5fa;
+}
+
+/* Navbar */
+.social-icons a {
+    color: #fcfffc;
+    margin-left: 1rem;
+    transition: color 0.3s ease;
+}
+.skills-section {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.section-title {
+  color: #aab4c8;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.skills-column {
+  flex: 1;
+  min-width: 320px;
+}
+
+.skills-column h3 {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.skill {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.skill p {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 8px 0;
+  font-weight: 500;
+}
+
+.bar {
+  background-color: #2a2e3a;
+  border-radius: 10px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 1s ease-in-out;
+}
+
+.fill.blue {
+  background-color: #3478f6;
+}
+
+.fill.purple {
+  background-color: #9b5cf2;
+}

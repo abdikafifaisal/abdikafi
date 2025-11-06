@@ -1,0 +1,199 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #0b1221;
+    color: #eaeaea;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    /* allow absolute-centering of the nav links */
+    position: relative;
+    align-items: center;
+    padding: 0.6rem 6%;
+    background-color: #0f172a;
+    border-bottom: #e2e8f0;
+    
+}
+
+.logo {
+       font-size: 1.5rem;
+    font-weight: 700;
+    color: #60a5fa;
+    /* keep the logo on the left and prevent it from expanding when nav-links are absolutely positioned */
+    flex: 0 0 auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    /* center the links horizontally in the header regardless of logo width */
+    position: absolute;
+    left: 56%;
+    top: 44%;
+    transform: translate(-50%, -50%);
+}
+
+
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding-left: 0px;
+
+}
+
+.nav-links a:hover {
+    color: #60a5fa;
+}
+
+/* Navbar */
+.social-icons a {
+    color: #fcfffc;
+    margin-left: 1rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #60a5fa;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 6%;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 550px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #e2e8f0;
+}
+
+.hero-content h1 span {
+    color: #60a5fa;
+}
+
+.hero-content h3 {
+    font-weight: 500;
+    color: #94a3b8;
+    margin: 1rem 0;
+}
+
+.hero-content p {
+    color: #cbd5e1;
+    margin-bottom: 1rem;
+}
+
+.buttons {
+    margin-top: 1.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn.primary {
+    background-color: #2563eb;
+    color: white;
+}
+
+.btn.primary:hover {
+    background-color: #1e3a8a;
+}
+
+.btn.secondary {
+    border: 1px solid #94a3b8;
+    color: #cbd5e1;
+    margin-left: 1rem;
+}
+
+.btn.secondary:hover {
+    background-color: #1e293b;
+}
+
+/* Hero Image */
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 500px;
+    height: 450px;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        width: 80%;
+        margin-top: 2rem;
+    }
+}
+
+/* Footer / Social icons */
+footer {
+    padding: 2rem 6%;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-icons a {
+    color: #fcfffc;
+    font-size: 1.4rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.03);
+    transition: background 0.2s ease, color 0.2s ease, transform 0.12s ease;
+}
+
+.social-icons a:hover {
+    color: #60a5fa;
+    transform: translateY(-3px);
+    background: rgba(96, 165, 250, 0.08);
+}
