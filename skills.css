@@ -7,7 +7,7 @@ body {
 }
 .navbar {
     display: flex;
-    /* allow absolute-centering of the nav links */
+    
     position: relative;
     align-items: center;
     padding: 0.6rem 6%;
@@ -20,7 +20,7 @@ body {
        font-size: 1.5rem;
     font-weight: 700;
     color: #60a5fa;
-    /* keep the logo on the left and prevent it from expanding when nav-links are absolutely positioned */
+    
     flex: 0 0 auto;
 }
 
@@ -28,7 +28,7 @@ body {
     list-style: none;
     display: flex;
     gap: 2rem;
-    /* center the links horizontally in the header regardless of logo width */
+    
     position: absolute;
     left: 56%;
     top: 44%;
